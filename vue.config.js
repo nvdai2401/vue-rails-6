@@ -61,10 +61,8 @@ const devServer = Object.assign(
   { hotOnly: true }
 );
 
-console.log("webpackerConfig ", devServer);
-
 module.exports = {
-  publicPath,
+  publicPath: `/${publicPath}`,
   pages,
   outputDir,
   devServer,
