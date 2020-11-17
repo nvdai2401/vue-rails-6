@@ -57,8 +57,11 @@ const devServer = Object.assign(
       };
     }
   ),
-  // { hotOnly: true, proxy: "http://localhost:3000", writeToDisk: true }
-  { hotOnly: true }
+  {
+    proxy: "http://localhost:3000",
+    hot: true,
+    liveReload: false,
+  }
 );
 
 module.exports = {
